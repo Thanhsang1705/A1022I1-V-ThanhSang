@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = [];
+    let b = [];
+    for (i=0; i<10; i++){
+        a[i]= +prompt("Nhập phần tử mảng 1 thứ " +i);
+    }
+    for (j=0; j<10; j++){
+        b[j]= +prompt("Nhập phần tử mảng 2 thứ " +j);
+    }
+    let c = b.concat(a);
+    document.write(c);
+</script>
+</body>
+</html>
