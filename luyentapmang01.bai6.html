@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    let count = 0;
+    for (i = 0 ; i<10; i++) {
+        arr[i] = +prompt("Nhập phần tử thứ " + i)
+    }
+    let V = +prompt("nhap so");
+    for (i=0; i<arr.length; i++){
+        if (V===arr[i]){
+            count ++;
+        }
+    }
+    if (count ===0){
+        document.write("V isn't in the array");
+    }else {
+        document.write("V is in the array");
+    }
+</script>
+</body>
+</html>
