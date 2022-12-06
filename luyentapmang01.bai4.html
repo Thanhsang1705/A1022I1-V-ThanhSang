@@ -7,19 +7,14 @@
 <body>
 <script>
     let arr = [];
-    for (i = 0 ; i<5; i++) {
-        arr[i] = +prompt("Nhập phần tử thứ " + i)
+    for (i=0; i<5; i++){
+        arr[i] = +prompt("Nhập số Nguyên thứ " + i)
     }
-    let first = 0;
-    let last = arr.length - 1;
-    while (first < last){
-        let b = arr[first];
-        arr[first] = arr[last];
-        arr[last] = b;
-        first ++;
-        last --;
+    for (i=0; i<arr.length; i++){
+        if (arr[i]<0){
+            document.write(arr[i] + "<br>")
+        }
     }
-    document.write(arr);
 </script>
 </body>
 </html>
