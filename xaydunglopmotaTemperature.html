@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+  class Temprerature {
+      constructor(degree) {
+          this.degree = degree
+      }
+      getF() {
+          return 9/5 * this.degree + 32
+      }
+      getK() {
+          return this.degree + 273.15
+      }
+  }
+  let degree = +prompt("Trị số tính theo đơn vị độ C")
+  let temprerature = new Temprerature(degree)
+  // Trị số tính theo đơn vị độ C
+  document.write(temprerature.degree)
+  //Có tính năng chuyển đổi từ độ C sang độ F.
+  document.write(temprerature.getF())
+  // Có tính năng chuyển đổi từ độ C sang độ Kenvin.
+  document.write(temprerature.getK())
+
+
+</script>
+</html>
