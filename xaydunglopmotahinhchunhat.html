@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="rectangle"></div>
+</body>
+<script>
+    class Rectangle {
+        constructor(long, wide) {
+            this.long = long
+            this.wide = wide
+        }
+        getArea() {
+            return this.long * this.wide
+        }
+        getPerimeter() {
+            return (this.long + this.wide) * 2
+        }
+    }
+
+    let long = +prompt("nhập chiêu dài" )
+    let wide = +prompt("nhập chiều rộng")
+    let rectangle = new Rectangle(long, wide)
+    document.write(rectangle.long, rectangle.wide)
+    document.write("diện tích hình nhữ nhật", rectangle.getArea() + "<br>")
+    document.write("chu vi hình chữ nhật" , rectangle.getPerimeter() )
+    
+</script>
+</html>
