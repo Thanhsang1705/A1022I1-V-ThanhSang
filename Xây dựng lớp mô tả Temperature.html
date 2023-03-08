@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Temperature{
+        constructor(c) {
+            this.c = c;
+        }
+        getCtoF(){
+            return 1.8 * this.c + 32;
+        }
+        getCtoKenvin(){
+            return this.c +  273.15;
+        }
+        getInfor(){
+            alert("Nhiệt Độ F là : " + this.getCtoF() + " Nhiệt Độ Kenvin là: " + this.getCtoKenvin());
+        }
+    }
+    let n = +prompt("Nhập Độ C vào đây: ")
+    if(n > -273){
+        let temperature = new Temperature(n);
+        temperature.getInfor();
+    }else {
+        alert("Nhiệt độ phải lớn hơn -273 độ:")
+    }
+</script>
+</body>
+</html>
